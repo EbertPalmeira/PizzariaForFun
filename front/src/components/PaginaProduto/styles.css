@@ -1,0 +1,17 @@
+.container{
+
+    display:grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    gap: 200px;
+    border: 1px solid blue;
+
+}
+.container img{
+    width: 200px;
+    border: 1px solid red;
+}
+.container button{
+    cursor: pointer;
+    padding: 10px 20px;
+}
