@@ -1,17 +1,39 @@
 .container{
-
     display:grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 500px 500px;
     justify-content: center;
-    gap: 200px;
-    border: 1px solid blue;
+    /* gap: 30px; */
+    
+    text-align: center;
 
 }
 .container img{
-    width: 200px;
-    border: 1px solid red;
+    width: 400px;
+}
+.container h2{
+  color: #FFFACD	;
+  font-family: "Bebas Neue", sans-serif;
+    font-size: 1.7em;
+    /* margin-bottom: 10px; */
+}
+.container span{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    border-bottom: 1px solid #FFFACD;
+
 }
 .container button{
+    margin-top: 20px;
+    padding: 5px 15px;
     cursor: pointer;
-    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #B22222;
+    transition: .5s;
+   text-transform: uppercase;
+   margin-bottom: 50px;
+   
+}
+.container p{
+    font-size: 1.2em;
 }

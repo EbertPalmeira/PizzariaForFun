@@ -1,8 +1,73 @@
 .sobre{
     display: grid;
-    grid-template-columns: repeat(2,450px);
+    grid-template-columns: repeat(2,500px);
     justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0px 70px 0px 40px;
+
 }
 .sobre img{
-    width: 500px;
+    width: 600px;
+}
+.sobre-text{
+    align-items: center;
+    font-size: 1.5em;
+    width: 550px;
+
+}
+.sobre-text p{
+    color: 	#B22222;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.sobre-text button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #B22222;
+    border-radius: 30px 0 30px;
+    transition: .5s;
+   text-transform: uppercase;
+
+    
+}
+.sobre-text button:hover{
+    border-radius: 0 30px 0 30px;
+    color: #000000;
+    font-weight: bold;
+
+}
+.sobre-text h2{
+    text-transform: uppercase;
+    color: #FFFACD	;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+.text-pizza{
+
+    padding: 110px;
+    text-align: c;
+}
+.text-pizza p{
+    color: #B22222;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text-pizza h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFACD	;
+    font-size: 3em;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Bebas Neue", sans-serif;
 }

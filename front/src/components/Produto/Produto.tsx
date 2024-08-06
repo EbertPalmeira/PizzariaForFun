@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCarrinho } from '../context/index';
+import { useCarrinho } from '../../context/index';
 import './Produto.css'
 
 const Produto = ({ produto }) => {
@@ -8,8 +8,9 @@ const Produto = ({ produto }) => {
     
   
     return (
-      <div>
-            <h2>{produto.nome}</h2>
+      <div className='produtos'>
+            <span> Pizza {produto.nome}</span>
+            <h2>{produto.desc}</h2>
             <img src={produto.img} alt={produto.nome}  />
             <p>R$ {produto.preco}</p>
             <button onClick={() => adicionarAoCarrinho(produto)}>Adicionar ao Carrinho</button>
