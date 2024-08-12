@@ -8,14 +8,18 @@ const Produto = ({ produto }) => {
     
   
     return (
+      <>
+      
       <div className='produtos'>
+        
             <span> Pizza {produto.nome}</span>
             <h2>{produto.desc}</h2>
             <img src={produto.img} alt={produto.nome}  />
-            <p>R$ {produto.preco}</p>
+            <p>R$ {produto.preco.toFixed(2).replace('.',',')}</p>
             <button onClick={() => adicionarAoCarrinho(produto)}>Adicionar ao Carrinho</button>
         
       </div>
+      </>
     );
   };
   

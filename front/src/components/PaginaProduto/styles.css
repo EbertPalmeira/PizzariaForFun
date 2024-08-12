@@ -32,7 +32,12 @@
     transition: .5s;
    text-transform: uppercase;
    margin-bottom: 50px;
+   border-radius: 20px;
+   border: none;
    
+}
+.container button:hover{
+    color: #000;
 }
 .container p{
     font-size: 1.2em;

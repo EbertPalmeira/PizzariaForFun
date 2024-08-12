@@ -1,12 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { CarrinhoProvider } from './context';
-import Carrinho from './components/Cart';
+import CarrinhoIcon from './components/Cart';
 import PaginaProduto from './components/PaginaProduto/PaginaProduto';
 import './App.css'
 import Header from './components/Header/Header';
+import Carrinho from './components/Carrinho/Carrinho';
+
 
 const App = () => {
+
+ 
+
   return (
     <CarrinhoProvider>
       <Router>
@@ -15,12 +20,14 @@ const App = () => {
           <div>
             <p>FORFUN PIZZARIA</p>
           </div>
-          <Link to="/carrinho"><Carrinho /></Link>
+          <Link to="/carrinho"><CarrinhoIcon /></Link>
+          
         </header>
-        <Header/>
+        
         <main>
           <Routes>
             <Route path="/" element={<PaginaProduto />} />
+            <Route path="/carrinho" element={<Carrinho />} />
           </Routes>
         </main>
       </Router>
